@@ -1,0 +1,6 @@
+.parcel-cache
+node_modules
+.DS_Store
+mdn-support-context.zip
+Archive.zip
+web-ext-artifacts

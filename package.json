@@ -1,0 +1,19 @@
+{
+	"name": "@rmenke/design-multiplayer-shy-mode",
+	"private": true,
+	"version": "1.0.0",
+	"description": "",
+	"author": {
+		"email": "romainmenke@gmail.com",
+		"name": "Romain Menke"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "web-ext build --overwrite-dest --source-dir ./design-multiplayer-shy-mode",
+		"lint": "web-ext lint --source-dir ./design-multiplayer-shy-mode",
+		"web-ext": "web-ext"
+	},
+	"devDependencies": {
+		"web-ext": "^7.6.2"
+	}
+}
