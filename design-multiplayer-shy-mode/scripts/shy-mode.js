@@ -1,26 +1,11 @@
-function breakMultiplayer() {
-	breaker = window?.DebuggingHelpers?.websocket?.break;
-	if (breaker) {
-		console.log("Breaking multiplayer...");
-		breaker();
-		return true;
-	}
+window?.DebuggingHelpers?.websocket?.unbreak();
+requestAnimationFrame(() => {
+	window?.DebuggingHelpers?.websocket?.break();
+});
 
-	return false;
-}
-
-if (!breakMultiplayer()) {
+setInterval(() => {
+	window?.DebuggingHelpers?.websocket?.unbreak();
 	requestAnimationFrame(() => {
-		breakMultiplayer()
+		window?.DebuggingHelpers?.websocket?.break();
 	});
-
-	document.addEventListener('readyStateChange', () => {
-		breakMultiplayer()
-	});
-
-	let interval = window.setInterval(() => {
-		if (breakMultiplayer()) {
-			window.clearInterval(interval);
-		}
-	}, 100);
-}
+}, 5000);

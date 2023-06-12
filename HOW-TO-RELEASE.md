@@ -15,6 +15,6 @@
 
 ## Firefox
 
-1. Visit : https://addons.mozilla.org/en-US/developers/addon/support-context/edit
+1. Visit : https://addons.mozilla.org/en-US/developers/addon/design-multiplayer-shy-mode/edit
 2. Compress **the contents** of ./design-multiplayer-shy-mode
 3. Upload the zip file
